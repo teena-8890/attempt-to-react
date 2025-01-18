@@ -2,7 +2,7 @@ import { useState } from "react"
 
 
 function App() {
-  const [color, setColor] = useState("yellowgreen")
+  const [color, setColor] = useState("brown")
 
   return (
     <div className="w-full h-screen duration-200"
@@ -39,6 +39,11 @@ function App() {
           className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
           style={{backgroundColor: "black"}}
           >Black</button>
+          <button
+          onClick={() => setColor("aqua")}
+          className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+          style={{backgroundColor: "aqua"}}
+          >aqua</button>
         </div>
       </div>
     </div>
